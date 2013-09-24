@@ -1,0 +1,147 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd"
+    >
+<html lang="en">
+<head>
+    <title>中国评测-移动云测试平台</title>
+    <META content="IE=9" http-equiv="X-UA-Compatible">
+    <link rel="stylesheet" href="templetes/css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="templetes/css/layout.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="templetes/css/universal.css" type="text/css" media="screen" />
+</head>
+<body>
+    <div class="logo">
+        <a href="./index.html"><img src="templetes/img/logo.png" border="0" /></a>
+    </div>
+    
+    <div class="daohang">
+        <div class="F_Left daohang_left">
+            <strong><a href="./index.html" title="首页">&nbsp&nbsp&nbsp首 页&nbsp&nbsp&nbsp</a></strong>
+            <strong><a href="./aqjc.html" title="安全检测">安全检测</a></strong>
+            <strong><a href="./qdjc.html" title="渠道监测">渠道监测</a></strong>
+            <strong><a href="./yyjg.html" title="应用加固">应用加固</a></strong>
+            <strong><a href="./zxcs.html" title="在线测试">在线测试</a></strong>
+            <strong><a href="./yyqm.html" title="应用签名">应用签名</a></strong>
+            <strong><a href="./aqpg.html" title="安全评估">安全评估</a></strong>
+        </div>
+        <div class="F_Right daohang_right">
+            <strong><a href="./yylb.html" title="应用列表" class="current">应用列表</a></strong>
+        </div>
+    </div>
+    
+    <div class="F_Left kuang_950">
+        <div class=bread_crumbs>
+            <p><a href="./index.html">首页</a> - 应用列表</p>
+        </div>
+    </div>
+
+    <div class="F_Left newApp Mt15">
+        <p class=title>提交新应用</p>
+        <form name="uploadApp" method="post" action="#">
+            <ul>
+                <li class=F_Left><input type="text" name="file_pth" id="file_pth" readonly="true" /></li>
+                <li class=F_Left><input type="button" onclick="javascirpt:document.getElementById('true_bro').click()" id="browser" value="浏览" /></li>
+                <li class=F_Left><button type="submit"><p>提交</p></button></li>
+                <li class=F_Left style="width: 0px; overflow: hidden;"><input type="file" onchange="file_pth.value=this.value" id="true_bro" name="true_bro[file]" /></li>
+            </ul>
+        </form>
+        <div class=C_Both></div>
+        <p id="comment">文件必须为.apk格式</p>
+    </div>
+    
+    <div class="F_Left kuang_950 Mt25">
+        <script language="javascript">
+            function ejiaA1(o,a,b,c,d){
+                var t=document.getElementById(o).getElementsByTagName("tr");
+                for(var i=1;i<t.length;i++){
+                    t[i].style.backgroundColor=(t[i].sectionRowIndex%2==0)?a:b;
+                    /*t[i].onclick=function(){
+                        if(this.x!="1"){
+                            this.x="1";
+                            this.style.backgroundColor=d;
+                        }
+                        else{
+                            this.x="0";
+                            this.style.backgroundColor=(this.sectionRowIndex%2==0)?a:b;
+                        }
+                    }*/
+                    t[i].onmouseover=function(){
+                        if(this.x!="1")this.style.backgroundColor=c;
+                    }
+                    t[i].onmouseout=function(){
+                        if(this.x!="1")this.style.backgroundColor=(this.sectionRowIndex%2==0)?a:b;
+                    }
+                }
+            }
+        </script>
+        <table class=biaoge_950 id="yylb" cellspacing="0" cellpadding="0">
+            <tr>
+                <th width="60px">#local</th>
+                <th width="80px">#platform</th>
+                <th width="330px">名称</th>
+                <th width="120px">版本</th>
+                <th width="260px">MD5</th>
+                <th width="100px">占用空间</th>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>1089</td>
+                <td>Z_DeviceTest_v1_6_13.apk</td>
+                <td>暂未完成扫描</td>
+                <td>2e572e010d9b676d613fa8424e45f6fc</td>
+                <td>1.61 Mb</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>1088</td>
+                <td>z4root.1.3.0.apk</td>
+                <td>1.0.0</td>
+                <td>46965bd41dac0e4988515aa2f9f95b19</td>
+                <td>955.48 Kb</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>1087</td>
+                <td>bookcart_android_d160-1.apk</td>
+                <td>1.0.0</td>
+                <td>ad1b31412cfe40daaa77b47394bd6de0</td>
+                <td>607.33 Kb</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>0</td>
+                <td>AutoAnswer.apk</td>
+                <td>1.0.0</td>
+                <td>1235c533fdcf230a0a90c0f83fb2b2f4</td>
+                <td>33.02 Kb</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>0</td>
+                <td>UsageApp.apk</td>
+                <td>1.0.0</td>
+                <td>c002d402e9a7cfd084fb52c366cc8bbc</td>
+                <td>20.48 Kb</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>0</td>
+                <td>neocore.apk</td>
+                <td>1.0.0</td>
+                <td>06ef8f40aca5ac9dec319cffe384743b</td>
+                <td>5.39 Mb</td>
+            </tr>
+        </table>
+        <script language="javascript">
+            //ejiaA1("表格名称","奇数行背景","偶数行背景","鼠标经过背景","点击后背景");
+            ejiaA1("yylb","#fff","#F5F5F5","#FFFFCC","#FFFFAA");
+        </script>
+    </div>
+    
+    <div class="F_Left about Mt50">
+        <p>地址：北京市海淀区紫竹院路66号赛迪大厦12/13/14层</p>
+        <p>传真：（010）88559333 服务电话:(010)88559238/9239 (010)88559372/9373</p>
+        <p>Copyright 2000-2011 CCIDnet.All rights reserved.</p>
+    </div>
+</body>
+</html>

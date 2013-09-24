@@ -1,0 +1,150 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd"
+    >
+<html lang="en">
+<head>
+    <title>中国评测-移动云测试平台</title>
+    <META content="IE=9" http-equiv="X-UA-Compatible">
+    <link rel="stylesheet" href="templetes/css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="templetes/css/layout.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="templetes/css/universal.css" type="text/css" media="screen" />
+</head>
+<body>
+    <div class="logo">
+        <a href="./index.html"><img src="templetes/img/logo.png" border="0" /></a>
+    </div>
+    
+    <div class="daohang">
+        <div class="F_Left daohang_left">
+            <strong><a href="./index.html" title="首页">&nbsp&nbsp&nbsp首 页&nbsp&nbsp&nbsp</a></strong>
+            <strong><a href="./aqjc.html" title="安全检测">安全检测</a></strong>
+            <strong><a href="./qdjc.html" title="渠道监测">渠道监测</a></strong>
+            <strong><a href="./yyjg.html" title="应用加固">应用加固</a></strong>
+            <strong><a href="./zxcs.html" title="在线测试" class="current">在线测试</a></strong>
+            <strong><a href="./yyqm.html" title="应用签名">应用签名</a></strong>
+            <strong><a href="./aqpg.html" title="安全评估">安全评估</a></strong>
+        </div>
+        <div class="F_Right daohang_right">
+            <strong><a href="./yylb.html" title="应用列表">应用列表</a></strong>
+        </div>
+    </div>
+    
+    <div class="F_Left kuang_950">
+        <div class=bread_crumbs>
+            <p><a href="./index.html">首页</a> - <a href="./zxcs.html">在线测试</a> - 创建测试</p>
+        </div>
+    </div>
+    
+    <div class="F_Left kuang_950 Mt15">
+        <div class="step2">
+            <p>创建测试表单</p>
+        </div>
+        <div class="kuang_950_appinfo Mt20">
+            <ul>
+                <li class=F_Left>
+                    <div><img src="./templetes/pic/appIcon/1.png" title="UsageApp.apk"/></div>
+                </li>
+                <li class=F_Left>
+                    <p id="target_app">UsageApp.apk</p>
+                    <p class=subtitle>版本：暂未完成扫描</p>
+                    <p class=subtitle>上传时间：2013-05-15 05:16:20</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="F_Left kuang_950 Mt10">
+        <form id="new_online_test_task" name="uploadOnlineTest" method="post" action="./zxcs_result_list.html" onsubmit="return testForm()">
+            <table>
+                <tr>
+                    <td class="T_right">测试类型</td>
+                    <td class="Pr30"></td>
+                    <td>
+                        <select id="testType" name="testType" onclick="changeType(this)">
+                            <option>功能测试</option>
+                            <option>兼容性测试</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="T_right">程序别名</td>
+                    <td class="Pr30"></td>
+                    <td><input type="text" id="nickName" name="nickName" /></td>
+                </tr>
+                <tr id="script">
+                    <td class="T_right">功能测试脚本</td>
+                    <td class="Pr30"><span class="red">*</span></td>
+                    <td>
+                        <ul>
+                            <li class=F_Left><li class=F_Left><input type="text" id="scriptName" name="scriptName" readonly="true" /></li></li>
+                            <li class=F_Left><input type="button" onclick="javascirpt:document.getElementById('true_bro').click()" id="browser" value="浏览"/></li>
+                            <li class=F_Left><input type="file" onchange="scriptName.value=this.value" id="true_bro" name="true_bro" style="width: 0px; overflow: hidden;"/></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="T_right">测试超时时间</td>
+                    <td class="Pr30"><span class="red">*</span></td>
+                    <td><input type="text" name="timeLimit" id="timeLimit" />&nbsp&nbsp（分钟）</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="allDevices" name="allDevices" value="checkbox">&nbsp&nbsp使用全部设备</td>
+                </tr>
+                <tr>
+                    <td ></td>
+                    <td></td>
+                    <td><button type="submit" onsubmit="testForm()"><p>提交</p></button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    
+    <script>
+        var MAX_LIMIT=999999;
+        function changeType(obj) {
+            if (obj.value=="功能测试") {
+                document.getElementById("script").style.display="table-row";
+            }
+            else {
+                document.getElementById("script").style.display="none";
+            }
+        }
+        function testForm() {
+            var test_type=document.getElementById("testType");
+            if (test_type.value=="功能测试") {
+                if (!document.getElementById("scriptName").value) {
+                    alert("请提交功能测试脚本！");
+                    return false;
+                }
+            }
+            
+            var time_limit=document.getElementById("timeLimit");
+            if (!time_limit.value) {
+                alert("请输入超时时间！");
+                return false;
+            }
+            
+            var re=/[^0-9]/;
+            if (re.test(time_limit.value)||time_limit.value<=0) {
+                alert("请确认超时时间为正整数！");
+                return false;
+            }
+            
+            if (time_limit.value>MAX_LIMIT) {
+                alert("请确认超时时间不大于"+MAX_LIMIT+"！");
+                return false;
+            }
+            
+            return true;
+        }
+    </script>
+    
+    <div class="F_Left about Mt50">
+        <p>地址：北京市海淀区紫竹院路66号赛迪大厦12/13/14层</p>
+        <p>传真：（010）88559333 服务电话:(010)88559238/9239 (010)88559372/9373</p>
+        <p>Copyright 2000-2011 CCIDnet.All rights reserved.</p>
+    </div>
+</body>
+</html>

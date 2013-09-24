@@ -1,0 +1,675 @@
+body {
+	margin: 0px auto; width: 950px;
+}
+body {
+	font-family: "Microsoft YaHei", "Î¢ÈíÑÅºÚ", "SimSun", "ËÎÌå", Arial, sans-serif;
+}
+body {
+	overflow-y: scroll;
+}
+li {
+	list-style-type: none;
+}
+img {
+	border: currentColor;
+}
+a {
+	text-decoration: none;
+}
+.logo {
+	margin: 10px auto 0px; width: 950px; overflow: hidden; position: relative;
+}
+.logo img {
+	width: 500px;
+}
+.daohang {
+	background: url("../img/daohang_bg.jpg") repeat-x left top; margin: 10px auto 0px; width: 950px; height: 56px; text-align: center; overflow: hidden; clear: both; position: relative;
+}
+.daohang_left {
+	width: 700px; margin-left: 10px;
+}
+.daohang_right {
+	width: 100px; margin-right: 10px;
+}
+.daohang div strong {
+	color: rgb(255, 255, 255); padding-top: 4px; font-size: 1.4em; float: left;
+}
+.daohang_left strong a {
+	margin: 0px 6px 0px 8px; padding: 0px 10px; height: 33px; color: rgb(255, 255, 255); line-height: 33px; font-size: 10pt; float: left; display: block;
+}
+.daohang div strong a.current {
+	margin: 0px 6px 0px 8px; padding: 0px 10px; height: 33px; color: rgb(255, 255, 255); line-height: 33px; font-size: 10pt; float: left; display: block;
+}
+.daohang_right strong a {
+	background: url("../img/daohang_bt.png") no-repeat center; margin: 0px 6px 0px 8px; padding: 0px 10px; height: 33px; color: rgb(203, 27, 29); line-height: 33px; font-size: 10pt; float: left; display: block;
+}
+.daohang div strong a:hover {
+	background: url("../img/daohang_cover.png") no-repeat center; color: rgb(255, 223, 0);
+}
+.daohang div strong a.current {
+	background: url("../img/daohang_cover.png") no-repeat center; color: rgb(255, 223, 0);
+}
+.blank_kuang_556 {
+	width: 556px;
+}
+.kuang_376 {
+	width: 376px;
+}
+.kuang_376_biaoti {
+	background: url("../img/biaoti_376.jpg") no-repeat left top; height: 26px;
+}
+.kuang_376_biaoti p {
+	color: rgb(255, 255, 255);
+}
+.kuang_376_biaoti a {
+	color: rgb(196, 34, 34); font-style: normal;
+}
+.kuang_376_neirong {
+	background: rgb(255, 255, 255); border: 2px solid rgb(204, 204, 204); width: 372px; height: 270px;
+}
+.kuang_376_neirong ul {
+	width: 230px; text-align: left; padding-top: 10px; margin-left: 10px;
+}
+.kuang_376_neirong ul li {
+	line-height: 27px; padding-left: 10px;
+}
+.kuang_376_neirong ul li a {
+	color: rgb(68, 68, 68); font-size: 14px;
+}
+#dot_ul li {
+	background: url("../img/dot.jpg") no-repeat 0px 11px;
+}
+#dot_ul li a:hover {
+	color: rgb(203, 27, 29);
+}
+.kuang_450 {
+	width: 450px; height: auto;
+}
+.kuang_450_biaoti {
+	background: url("../img/tag.png") no-repeat left top; height: 26px;
+}
+.kuang_450_biaoti p {
+	color: rgb(255, 255, 255); padding-top: 6px;
+}
+.kuang_450_neirong {
+	padding: 15px; border: 1px solid rgb(204, 204, 204); width: 416px; overflow: hidden;
+}
+.kuang_450_ztree {
+	background: rgb(248, 248, 248); border: 1px solid rgb(204, 204, 204); width: 416px; padding-top: 10px; padding-bottom: 10px; margin-top: 10px;
+}
+.kuang_950 {
+	width: 950px;
+}
+.kuang_950_biaoti {
+	background: url("../img/biaoti_950.jpg") no-repeat left top; height: 26px;
+}
+.kuang_950_biaoti p {
+	color: rgb(255, 255, 255);
+}
+.kuang_950_appinfo {
+	height: 110px; border-bottom-color: rgb(204, 34, 34); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.kuang_950_appinfo ul {
+	margin-left: 30px;
+}
+.kuang_950_appinfo div {
+	background: url("../img/rounded_rectangle_96.png") no-repeat left top; width: 96px; height: 96px;
+}
+.kuang_950_appinfo img {
+	margin: 12px; width: 72px; height: 72px;
+}
+.kuang_950_appinfo p {
+	padding-top: 5px; padding-left: 30px;
+}
+#target_app {
+	padding-top: 5px; padding-bottom: 20px; font-size: 20px; font-weight: bold;
+}
+.about {
+	background: rgb(255, 255, 255); width: 950px; height: auto; padding-top: 20px; padding-bottom: 20px; border-top-color: rgb(198, 42, 42); border-top-width: 2px; border-top-style: solid;
+}
+.about p {
+	text-align: center; color: rgb(68, 68, 68); line-height: 30px; font-size: 12px;
+}
+.bread_crumbs {
+	background: rgb(233, 233, 233); height: 30px; padding-left: 20px;
+}
+.bread_crumbs p {
+	line-height: 30px; font-size: 15px;
+}
+.bread_crumbs a {
+	line-height: 30px; font-size: 15px;
+}
+.step1 {
+	background: url("../img/step1.png") no-repeat left top; height: 38px; border-bottom-color: rgb(204, 34, 34); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.step2 {
+	background: url("../img/step2.png") no-repeat left top; height: 38px; border-bottom-color: rgb(204, 34, 34); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.step3 {
+	background: url("../img/step3.png") no-repeat left top; height: 38px; border-bottom-color: rgb(204, 34, 34); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.step1 p {
+	line-height: 53px; padding-left: 160px; font-size: 20px; font-weight: bold;
+}
+.step2 p {
+	line-height: 53px; padding-left: 160px; font-size: 20px; font-weight: bold;
+}
+.step3 p {
+	line-height: 53px; padding-left: 160px; font-size: 20px; font-weight: bold;
+}
+.step_kuang {
+	padding: 30px 15px 15px; height: 50px;
+}
+.step_kuang li {
+	width: 100px; height: 33px; margin-left: 25px;
+}
+.step_kuang li a {
+	background: url("../img/bt2.png") no-repeat left top; text-align: center; color: rgb(255, 255, 255); line-height: 33px; font-size: 15px; font-weight: bold; cursor: pointer;
+}
+.step_kuang li a:hover {
+	background: url("../img/bt2_cover.png") no-repeat left top; color: rgb(255, 223, 0); display: block;
+}
+.summaryWrapper {
+	background: rgb(255, 255, 255); border: 2px solid rgb(204, 204, 204); width: 946px; height: 116px;
+}
+.summaryWrapper ul {
+	padding: 0px; margin-left: 25px;
+}
+.summaryWrapper li {
+	float: left;
+}
+.summary-tab {
+	width: 160px;
+}
+.summary-imgWrapper {
+	width: 88px;
+}
+.summary-img {
+	margin-top: 16px;
+}
+.summaryWrapper p.summary-title {
+	line-height: 30px; font-size: 14px; font-weight: bold; margin-top: 8px;
+}
+.summary-content {
+	line-height: 22px; font-size: 12px;
+}
+.main_function_neirong {
+	background: rgb(255, 255, 255); border: 2px solid rgb(204, 204, 204); width: 946px; height: 300px;
+}
+.main_function_neirong table tr {
+	height: 144px;
+}
+.main_function_neirong table tr td {
+	width: 315px; vertical-align: top;
+}
+.main_function_neirong_71 {
+	width: 71px; margin-top: 18px; margin-left: 18px;
+}
+.main_function_neirong_200 {
+	width: 180px; margin-top: 18px; margin-left: 18px;
+}
+.main_function_neirong_200_20 {
+	height: 20px; overflow: hidden;
+}
+.main_function_neirong_200_20 p {
+	font-size: 14px; font-weight: bold;
+}
+.main_function_neirong_200_60 {
+	height: 50px; overflow: hidden; margin-top: 6px;
+}
+.main_function_neirong_200_60 p {
+	width: 180px; text-align: justify; line-height: 22px; font-size: 12px; word-wrap: break-word;
+}
+.main_function_neirong_200_27 {
+	background: url("../img/bt1.png") no-repeat left top; height: 27px; padding-top: 4px; padding-left: 14px; margin-top: 6px;
+}
+.main_function_neirong_200_27 a {
+	color: rgb(255, 255, 255); font-size: 12px; font-weight: bold;
+}
+.main_function_neirong_200_27 a:hover {
+	color: rgb(255, 223, 0);
+}
+.sub_function_neirong {
+	background: rgb(255, 255, 255); width: 946px; height: 330px;
+}
+.sub_function_neirong table {
+	margin-top: 20px; border-collapse: collapse;
+}
+.sub_function_neirong table tr {
+	height: 170px;
+}
+.sub_function_neirong table tr td {
+	width: 320px; vertical-align: middle;
+}
+.sub_function_neirong table tr td.bottom {
+	border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.sub_function_neirong table tr td.right {
+	border-right-color: rgb(204, 204, 204); border-right-width: 1px; border-right-style: solid;
+}
+.sub_function_neirong_71 {
+	width: 71px; margin-top: 18px; margin-left: 23px;
+}
+.sub_function_neirong_200 {
+	width: 180px; margin-top: 18px; margin-left: 18px;
+}
+.sub_function_neirong_200_20 {
+	height: 20px; overflow: hidden;
+}
+.sub_function_neirong_200_20 p {
+	font-size: 14px; font-weight: bold;
+}
+.sub_function_neirong_200_60 {
+	height: 50px; overflow: hidden; margin-top: 6px;
+}
+.sub_function_neirong_200_60 p {
+	width: 180px; text-align: justify; line-height: 22px; font-size: 12px; word-wrap: break-word;
+}
+.sub_function_neirong_200_27 {
+	background: url("../img/bt1.png") no-repeat left top; width: 80px; height: 27px; text-align: center;
+}
+.sub_function_neirong_200_27 a {
+	color: rgb(255, 255, 255); line-height: 27px; font-size: 12px; font-weight: bold;
+}
+.sub_function_neirong_200_27 a:hover {
+	color: rgb(255, 223, 0);
+}
+.recent_app_neirong {
+	background: rgb(255, 255, 255); border: 2px solid rgb(204, 204, 204); width: 946px; height: 290px;
+}
+.recent_app_neirong table tr {
+	height: 96px;
+}
+.recent_app_neirong table tr td div {
+	border: 1px solid rgb(204, 204, 204); width: 96px; margin-top: 30px; margin-left: 30px; vertical-align: top;
+}
+.recent_app_neirong table tr td img {
+	margin: 12px; width: 72px; height: 72px;
+}
+.terminal_neirong {
+	background: rgb(255, 255, 255); border: 2px solid rgb(204, 204, 204); width: 946px; height: 260px;
+}
+.terminal_neirong img {
+	width: 100px; height: 200px; margin-top: 30px; margin-left: 50px; float: left;
+}
+.newApp {
+	width: 950px;
+}
+.newApp form {
+	margin-top: 10px; vertical-align: middle;
+}
+#file_pth {
+	width: 462px; height: 23px; line-height: 23px; font-size: 16px;
+}
+#browser {
+	background: url("../img/bt1.png") no-repeat left top; border: currentColor; width: 80px; height: 27px; color: rgb(255, 255, 255); line-height: 27px; font-size: 13px; font-weight: bold; margin-left: 20px; cursor: pointer;
+}
+#browser:hover {
+	color: rgb(255, 223, 0);
+}
+.newApp form button {
+	background: url("../img/bt1.png") no-repeat left top; border: currentColor; width: 80px; height: 27px; margin-left: 20px; cursor: pointer;
+}
+.newApp form button p {
+	color: rgb(255, 255, 255); line-height: 27px; font-size: 13px; font-weight: bold; display: block;
+}
+.newApp form button p:hover {
+	color: rgb(255, 223, 0);
+}
+#comment {
+	height: 15px; color: rgb(170, 170, 170); line-height: 15px; font-size: 13px; margin-top: 10px;
+}
+.result {
+	margin-top: 0px; margin-right: 80px; margin-left: 80px;
+}
+.result ul {
+	border-width: 1px 1px medium; border-style: solid solid none; border-color: rgb(204, 204, 204) rgb(204, 204, 204) currentColor;
+}
+.result ul li {
+	border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.result ul li p {
+	line-height: 34px; font-size: 15px;
+}
+.result ul li.right {
+	background: url("../img/right.png") no-repeat 10px 4px; padding-left: 60px;
+}
+.result ul li.wrong {
+	background: url("../img/wrong.png") no-repeat 10px 4px; padding-left: 60px;
+}
+.result ul li.unknown {
+	background: url("../img/unknown.png") no-repeat 10px 4px; padding-left: 60px;
+}
+.result ul li.detail {
+	padding-left: 15px;
+}
+.result #img_wall {
+	width: 790px;
+}
+.result #img_wall div {
+	margin-right: 10px; margin-bottom: 10px; float: left;
+}
+.result #img_wall img {
+	border: 1px solid rgb(204, 204, 204);
+}
+.result #img_wall table {
+	border-collapse: collapse;
+}
+#onlineTest_submit_btn {
+	background: url("../img/bt2.png") no-repeat left top; border: currentColor; width: 120px; height: 35px; color: rgb(255, 255, 255); line-height: 38px; font-size: 15px; font-weight: bold; margin-right: 10px; cursor: pointer;
+}
+#onlineTest_submit_btn:hover {
+	color: rgb(255, 223, 0);
+}
+#new_online_test_task td {
+	padding-top: 20px; font-size: 16px;
+}
+#new_online_test_task .T_right {
+	text-align: right;
+}
+#new_online_test_task select {
+	width: 150px; font-size: 15px;
+}
+#nickName {
+	width: 200px; height: 23px; line-height: 23px; font-size: 16px;
+}
+#scriptName {
+	width: 460px; height: 23px; line-height: 23px; font-size: 16px;
+}
+#timeLimit {
+	width: 100px; height: 23px; line-height: 23px; font-size: 16px;
+}
+#new_online_test_task button {
+	background: url("../img/bt1.png") no-repeat left top; border: currentColor; width: 80px; height: 27px; cursor: pointer;
+}
+#new_online_test_task button p {
+	color: rgb(255, 255, 255); line-height: 27px; font-size: 13px; font-weight: bold; display: block;
+}
+#new_online_test_task button p:hover {
+	color: rgb(255, 223, 0);
+}
+.devicesList {
+	width: 200px;
+}
+.devicesList_biaoti {
+	background: url("../img/tag_200.png") no-repeat left top; height: 27px;
+}
+.devicesList_biaoti p {
+	color: rgb(255, 255, 255); line-height: 27px; padding-left: 20px; font-size: 14px; font-weight: bold;
+}
+.devicesList_neirong {
+	border: 1px solid rgb(204, 204, 204); overflow: hidden; padding-top: 5px; padding-bottom: 5px;
+}
+.devicesList_neirong div {
+	padding: 5px 10px; cursor: pointer;
+}
+.devicesList_neirong div p {
+	line-height: 25px; overflow: hidden; font-size: 14px; white-space: nowrap; text-overflow: ellipsis; -o-text-overflow: ellipsis;
+}
+.devicesList_neirong div:hover {
+	background: rgb(233, 233, 233);
+}
+.devicesList_neirong div.current {
+	background: rgb(216, 216, 216);
+}
+.onlineTest_detail {
+	width: 740px;
+}
+.onlineTest_biaoti {
+	background: url("../img/tag_720.png") no-repeat left top; height: 27px;
+}
+.onlineTest_biaoti p {
+	color: rgb(255, 255, 255); line-height: 27px; padding-left: 20px; font-size: 14px; font-weight: bold;
+}
+.onlineTest_neirong {
+	padding: 20px; border: 1px solid rgb(204, 204, 204); overflow: hidden;
+}
+.onlineTest_neirong .basic_info img {
+	padding: 11px 15px; border: 1px solid rgb(204, 204, 204); width: 60px; height: 100px;
+}
+.onlineTest_neirong .basic_info table {
+	border-collapse: collapse;
+}
+.onlineTest_neirong .basic_info table td {
+	padding: 10px; border: 1px solid rgb(204, 204, 204); height: 20px; font-size: 12px;
+}
+.onlineTest_neirong .img_wall div {
+	margin: 5px 10px; padding: 14px; border: 1px dashed rgb(204, 204, 204); float: left;
+}
+.onlineTest_neirong .img_wall img {
+	border: 1px solid rgb(204, 204, 204); width: 180px; height: 280px;
+}
+#download_btn {
+	background: url("../img/bt1.png") no-repeat left top; border: currentColor; width: 80px; height: 26px; color: rgb(255, 255, 255); line-height: 26px; font-size: 12px; font-weight: bold; margin-right: 2px; cursor: pointer;
+}
+#download_btn:hover {
+	color: rgb(255, 223, 0);
+}
+.timer_form {
+	width: 950px;
+}
+.timer_form td {
+	height: 40px; line-height: 40px; position: relative;
+}
+#time_value {
+	width: 100px; height: 23px; line-height: 23px; font-size: 16px;
+}
+#time_btn {
+	background: url("../img/bt1.png") no-repeat left top; border: currentColor; left: 105px; top: 7px; width: 80px; height: 27px; color: rgb(255, 255, 255); font-size: 13px; font-weight: bold; margin-bottom: 10px; margin-left: 20px; position: absolute; cursor: pointer;
+}
+#time_btn:hover {
+	color: rgb(255, 223, 0);
+}
+.timer_form select {
+	left: 20px; top: 7px; width: 80px; height: 27px; line-height: 27px; font-size: 14px; position: absolute;
+}
+#dynamic_detection {
+	padding: 15px; border: 1px solid rgb(204, 204, 204); width: 918px; height: 600px; display: none;
+}
+#dynamic_detection .left_part {
+	width: 307px; height: 600px;
+}
+#dynamic_detection .left_part .flash {
+	border: 1px solid rgb(204, 204, 204); height: 550px; margin-top: 8px;
+}
+#dynamic_detection .left_part .flash div {
+	margin: 5px; width: 295px; height: 540px;
+}
+#dynamic_detection .left_part .state {
+	height: 40px;
+}
+#dynamic_detection .left_part .state p {
+	line-height: 40px; padding-left: 20px;
+}
+#dynamic_detection .log {
+	width: 600px; height: 600px;
+}
+#dynamic_detection .log .biaoge {
+	border: 1px solid rgb(204, 204, 204); width: 600px; height: 550px; overflow: auto;
+}
+#dynamic_detection .log .biaoge table {
+	width: 600px; border-collapse: collapse;
+}
+#dynamic_detection .log .biaoge td {
+	height: 30px; line-height: 30px; padding-right: 10px; padding-left: 10px; font-size: 14px; border-top-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+#eyi_chart_btn {
+	background: url("../img/bt3.png") no-repeat left top; border: currentColor; width: 85px; height: 35px; color: rgb(255, 255, 255); line-height: 38px; font-size: 15px; font-weight: bold; margin-right: 10px; cursor: pointer;
+}
+#eyi_chart_btn:hover {
+	color: rgb(255, 223, 0);
+}
+#eyi_search_form {
+	width: 950px;
+}
+#eyi_search_form td {
+	height: 40px; line-height: 40px; position: relative;
+}
+#eyi_search_form #q {
+	width: 300px; height: 23px; line-height: 23px; font-size: 16px;
+}
+#eyi_search_form #column {
+	left: 30px; top: 7px; width: 120px; height: 27px; line-height: 27px; font-size: 14px; position: absolute;
+}
+#eyi_search_form #search_btn {
+	background: url("../img/bt1.png") no-repeat left top; border: currentColor; left: 105px; top: 7px; width: 80px; height: 27px; color: rgb(255, 255, 255); font-size: 13px; font-weight: bold; margin-bottom: 10px; margin-left: 70px; position: absolute; cursor: pointer;
+}
+#eyi_search_form #search_btn:hover {
+	color: rgb(255, 223, 0);
+}
+.biaoge_450 {
+	width: 450px; border-top-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-top-width: 1px; border-left-width: 1px; border-top-style: solid; border-left-style: solid;
+}
+.biaoge_750 {
+	width: 750px; border-top-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-top-width: 1px; border-left-width: 1px; border-top-style: solid; border-left-style: solid;
+}
+.biaoge_790 {
+	width: 790px; border-top-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-top-width: 1px; border-left-width: 1px; border-top-style: solid; border-left-style: solid;
+}
+.biaoge_950 {
+	width: 950px; border-top-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-top-width: 1px; border-left-width: 1px; border-top-style: solid; border-left-style: solid;
+}
+.biaoge_450 td {
+	padding: 5px 5px 5px 10px; height: 16px; text-align: left; line-height: 16px; font-size: 12px; border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid;
+}
+.biaoge_950 td {
+	padding: 5px 5px 5px 10px; height: 16px; text-align: left; line-height: 16px; font-size: 12px; border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid;
+}
+.biaoge_790 td {
+	padding: 5px 5px 5px 10px; height: 16px; text-align: left; line-height: 16px; font-size: 12px; border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid;
+}
+.biaoge_750 td {
+	padding: 5px 5px 5px 10px; height: 16px; text-align: left; line-height: 16px; font-size: 12px; border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid;
+}
+#yylb th {
+	padding: 5px 5px 5px 10px; height: 16px; text-align: left; line-height: 16px; font-size: 12px; border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid;
+}
+.biaoge_450 th {
+	padding: 5px 5px 5px 10px; height: 16px; text-align: left; line-height: 16px; font-size: 12px; border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid;
+}
+.biaoge_950 th {
+	padding: 5px 5px 5px 10px; height: 16px; text-align: left; line-height: 16px; font-size: 12px; border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid;
+}
+.biaoge_790 th {
+	padding: 5px 5px 5px 10px; height: 16px; text-align: left; line-height: 16px; font-size: 12px; border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid;
+}
+.biaoge_750 th {
+	padding: 5px 5px 5px 10px; height: 16px; text-align: left; line-height: 16px; font-size: 12px; border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid;
+}
+#permission ul {
+	border: currentColor;
+}
+#permission ul li {
+	border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#permission .name {
+	line-height: 30px; font-size: 12px;
+}
+#permission .memo {
+	line-height: 20px; padding-bottom: 10px; font-size: 12px;
+}
+.big_title {
+	line-height: 20px; font-size: 20px; font-weight: bold;
+}
+.title {
+	color: rgb(68, 68, 68); font-size: 16px; font-weight: bold;
+}
+.subtitle {
+	color: rgb(68, 68, 68); font-size: 13px; font-weight: bold;
+}
+.subinfo {
+	color: rgb(68, 68, 68); font-size: 13px;
+}
+.white_link {
+	color: rgb(255, 255, 255);
+}
+.white_link:hover {
+	color: rgb(255, 223, 0);
+}
+.icon_y {
+	background: url("../img/icon_y.png") no-repeat left; padding-left: 25px;
+}
+.icon_x {
+	background: url("../img/icon_x.png") no-repeat left; padding-left: 25px;
+}
+.icon_i {
+	background: url("../img/icon_i.png") no-repeat left; padding-left: 25px;
+}
+.red {
+	color: rgb(204, 0, 0); line-height: 15px; font-weight: bold;
+}
+.green {
+	color: rgb(0, 136, 0); line-height: 15px; font-weight: bold;
+}
+.yellow {
+	color: rgb(225, 179, 0); line-height: 15px; font-weight: bold;
+}
+.alert_warning {
+	background: url("../img/warning.png") no-repeat left 2px rgb(248, 248, 248); margin: 10px auto; border: 1px solid rgb(204, 204, 204); width: 650px; height: 50px; overflow: hidden; padding-left: 60px; clear: both; vertical-align: middle;
+}
+.alert_info {
+	background: url("../img/info.png") no-repeat left 2px rgb(248, 248, 248); margin: 10px auto; border: 1px solid rgb(204, 204, 204); width: 650px; height: 50px; overflow: hidden; padding-left: 60px; clear: both; vertical-align: middle;
+}
+.alert_warning p {
+	height: 50px; line-height: 50px; font-size: 14px; vertical-align: middle; word-break: keep-all; word-wrap: break-word;
+}
+.alert_info p {
+	height: 50px; line-height: 50px; font-size: 14px; vertical-align: middle; word-break: keep-all; word-wrap: break-word;
+}
+.shadow div {
+	color: rgb(0, 102, 204);
+}
+.shadow:hover div {
+	position: relative;
+}
+.shadow div div {
+	display: none;
+}
+.shadow:hover div div {
+	background: rgb(248, 248, 248); border: 1px solid rgb(204, 204, 204); left: -150px; width: 300px; height: 60px; text-align: center; color: rgb(0, 0, 0); line-height: 60px; clear: both; font-size: 14px; display: block; position: absolute;
+}
+.pagination {
+	background: rgb(241, 241, 241); width: 950px; height: 30px; text-align: center; line-height: 30px; font-size: 14px; margin-top: 20px; float: left; cursor: default;
+}
+.pagination a {
+	padding: 5px;
+}
+.pagination span {
+	padding: 5px;
+}
+.pagination .disabled {
+	color: rgb(170, 170, 170);
+}
+.pagination .current {
+	width: 15px; height: 30px; line-height: 30px; font-style: normal; font-weight: bold; display: inline-block; background-color: rgb(204, 204, 204);
+}
+.pagination a {
+	color: black;
+}
+.pagination a:hover {
+	width: 15px; height: 30px; background-color: rgb(221, 221, 221);
+}
+.pagination a:focus {
+	width: 15px; height: 30px; background-color: rgb(221, 221, 221);
+}
+.tabs {
+	line-height: 14px; font-size: 14px; margin-top: 15px; position: relative;
+}
+.tabs ul {
+	width: 900px; height: 30px; padding-left: 50px; font-weight: bold; border-bottom-color: rgb(204, 68, 68); border-bottom-width: 1px; border-bottom-style: solid; display: block;
+}
+.tabs ul li {
+	padding: 1px; top: 1px; color: rgb(204, 204, 204); margin-right: 10px; float: left; white-space: nowrap; position: relative; border-top-left-radius: 4px; border-top-right-radius: 4px; oz-border-radius-topleft: 4px; -moz-border-radius-topright: 4px;
+}
+.tabs ul li.tabs_active {
+	background: rgb(255, 255, 255); border-width: 1px 1px medium; border-style: solid solid none; border-color: rgb(204, 68, 68) rgb(204, 68, 68) currentColor; padding: 0px 0px 1px;
+}
+.tabs ul li:hover {
+	border-width: 1px 1px medium; border-style: solid solid none; border-color: rgb(204, 68, 68) rgb(204, 68, 68) currentColor; padding: 0px 0px 1px; background-color: rgb(255, 255, 255);
+}
+.tabs ul li a {
+	padding: 7px 25px; color: rgb(85, 85, 85); float: left; cursor: pointer;
+}
+.tabs ul li.tabs_active a {
+	color: rgb(34, 34, 34);
+}

@@ -1,0 +1,175 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd"
+    >
+<html lang="en">
+<head>
+    <title>中国评测-移动云测试平台</title>
+    <META content="IE=9" http-equiv="X-UA-Compatible">
+    <link rel="stylesheet" href="templetes/css/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="templetes/css/layout.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="templetes/css/universal.css" type="text/css" media="screen" />
+</head>
+<body>
+    <div class="logo">
+        <a href="./index.html"><img src="templetes/img/logo.png" border="0" /></a>
+    </div>
+    
+    <div class="daohang">
+        <div class="F_Left daohang_left">
+            <strong><a href="./index.html" title="首页">&nbsp&nbsp&nbsp首 页&nbsp&nbsp&nbsp</a></strong>
+            <strong><a href="./aqjc.html" title="安全检测" class="current">安全检测</a></strong>
+            <strong><a href="./qdjc.html" title="渠道监测">渠道监测</a></strong>
+            <strong><a href="./yyjg.html" title="应用加固">应用加固</a></strong>
+            <strong><a href="./zxcs.html" title="在线测试">在线测试</a></strong>
+            <strong><a href="./yyqm.html" title="应用签名">应用签名</a></strong>
+            <strong><a href="./aqpg.html" title="安全评估">安全评估</a></strong>
+        </div>
+        <div class="F_Right daohang_right">
+            <strong><a href="./yylb.html" title="应用列表">应用列表</a></strong>
+        </div>
+    </div>
+    
+    <div class="F_Left kuang_950">
+        <div class=bread_crumbs>
+            <p><a href="./index.html">首页</a> - <a href="./aqjc.html">安全检测</a> - 动态检测：neocore.apk</p>
+        </div>
+    </div>
+    
+    <div class="F_Left kuang_950 Mt15">
+        <div class="step2">
+            <p>动态检测控制</p>
+        </div>
+    </div>
+    
+    <div class="F_Left timer_form Mt25">
+        <p class=title>请输入检测时间并选择检测方式：</p>
+        <table class="C_Both Mt10">
+            <tr>
+                <td><input type="text" id="time_value" /></td>
+                <td><span>&nbsp&nbsp（秒）</span></td>
+                <td>
+                    <select>
+                        <option value="auto">自动</option>
+                        <option value="manu">手动</option>
+                    </select>
+                </td>
+                <td><input type="button" id="time_btn" onclick="test_input(this)" value="开始检测" /></td>
+            </tr>
+        </table>
+        <p id="comment">&nbsp</p>
+    </div>
+    
+    <div class="F_Left Mt25" id="dynamic_detection">
+        <div class="F_Left left_part">
+            <div class=state>
+                <p class="subinfo">当前状态：检测中，剩余 <span class="green">2000</span> 秒</p>
+            </div>
+            <div class=flash>
+                <div><embed src="#"></embed></div>
+            </div>
+        </div>
+        <div class="F_Right log">
+            <p class="Mt10 Pl10 title">日志</p>
+            <div class="biaoge Mt17">
+                <script language="javascript">
+                    function ejiaA1(o,a,b,c,d){
+                        var t=document.getElementById(o).getElementsByTagName("tr");
+                        for(var i=0;i<t.length;i++){
+                            t[i].style.backgroundColor=(t[i].sectionRowIndex%2==0)?a:b;
+                            /*t[i].onclick=function(){
+                                if(this.x!="1"){
+                                    this.x="1";
+                                    this.style.backgroundColor=d;
+                                }
+                                else{
+                                    this.x="0";
+                                    this.style.backgroundColor=(this.sectionRowIndex%2==0)?a:b;
+                                }
+                            }*/
+                            t[i].onmouseover=function(){
+                                if(this.x!="1")this.style.backgroundColor=c;
+                            }
+                            t[i].onmouseout=function(){
+                                if(this.x!="1")this.style.backgroundColor=(this.sectionRowIndex%2==0)?a:b;
+                            }
+                        }
+                    }
+                </script>
+                <table id="log_table">
+                    <tr><td>2013-05-22 13:28:35 &nbsp 来点中文</td></tr>
+                    <tr><td>2013-05-22 13:28:35 &nbsp 来点中文</td></tr>
+                    <tr><td>2013-05-22 13:28:35 &nbsp some english words</td></tr>
+                    <tr><td>2013-05-22 13:28:35 &nbsp some english words</td></tr>
+                </table>
+                <script language="javascript">
+                    //ejiaA1("表格名称","奇数行背景","偶数行背景","鼠标经过背景","点击后背景");
+                    ejiaA1("log_table","#fff","#F5F5F5","#FFFFCC","#FFFFAA");
+                </script>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var COOLING_TIME_LIMIT=30;
+        var MAX_LIMIT=999999;
+        var timer_id;
+        
+        function test_input(btn) {
+            var obj=document.getElementById("time_value");
+            
+            if (!obj.value) {
+                alert("请输入检测时间！");
+                return 0;
+            }
+            
+            var re=/[^0-9]/;
+            if (re.test(obj.value)||obj.value<=0) {
+                alert("请确认输入值为正整数！");
+                return 0;
+            }
+            
+            if (obj.value>MAX_LIMIT) {
+                alert("请确认输入值不大于"+MAX_LIMIT+"！");
+                return 0;
+            }
+            
+            obj.disabled="disabled";
+            btn.disabled="disabled";
+            
+            document.getElementById("dynamic_detection").style.display="block";
+            
+            var now=new Date();
+            var start=parseInt(now.getTime()/1000);
+            btn.value=COOLING_TIME_LIMIT;
+            timer_id = setInterval("timer_fun("+start+")", 1000);
+            document.getElementById("comment").innerHTML="动态检测功能模块启动中，请勿关闭或刷新页面";
+            
+            return 0;
+        }
+        
+        function timer_fun(start) {
+            var now=new Date();
+            var difference=parseInt(now.getTime()/1000)-start;
+            var countDown=COOLING_TIME_LIMIT-difference;
+            var btn=document.getElementById("time_btn")
+            btn.value=countDown;
+            
+            if (countDown<=0) {
+                document.getElementById("time_value").disabled=null;
+                btn.disabled=null;
+                btn.value="开始检测";
+                
+                document.getElementById("comment").innerHTML="&nbsp";
+                clearInterval(timer_id);
+                return;
+            }
+        }
+    </script>
+    
+    <div class="F_Left about Mt50">
+        <p>地址：北京市海淀区紫竹院路66号赛迪大厦12/13/14层</p>
+        <p>传真：（010）88559333 服务电话:(010)88559238/9239 (010)88559372/9373</p>
+        <p>Copyright 2000-2011 CCIDnet.All rights reserved.</p>
+    </div>
+</body>
+</html>
